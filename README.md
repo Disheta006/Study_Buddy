@@ -25,8 +25,8 @@ A dynamic Django web application that allows users to search cities, fetch real-
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Disheta/study_buddy.git
-   cd study_buddy
+   git clone https://github.com/Disheta/Study_Buddy.git
+   cd Study_Buddy
 
 2. **Create virtual environment**
    python -m venv venv
@@ -47,10 +47,6 @@ A dynamic Django web application that allows users to search cities, fetch real-
 
 7. **Open browser:**
    http://127.0.0.1:8000/
-
-## 🔑 Environment Variables
-
-**Create a .env file and add:**  WEATHER_API_KEY=your_api_key_here
 
 ## 📸 Screenshots
 
@@ -88,8 +84,8 @@ A dynamic Django web application that allows users to search cities, fetch real-
 ## 👩‍💻 Author
 
 - **Name:** Isheta Dhanavada
--📎**GitHub:** https://github.com/Disheta006
--📎**LinkedIn:** Isheta Dhanavada
+-**GitHub:** https://github.com/Disheta006
+-**LinkedIn:** Isheta Dhanavada
 
 ## ⭐ Acknowledgements
 
