@@ -25,8 +25,8 @@ A dynamic Django web application that allows users to search cities, fetch real-
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/project-name.git
-   cd project-name
+   git clone https://github.com/Disheta/study_buddy.git
+   cd study_buddy
 
 2. **Create virtual environment**
    python -m venv venv
