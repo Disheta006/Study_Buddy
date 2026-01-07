@@ -8,6 +8,7 @@ A dynamic Django web application that allows users to search cities, fetch real-
 - 🌈 Dynamic UI theme changes based on weather (Sunny, Rainy, Cloudy, etc.)
 - 🧠 Interactive quiz cards with reveal answers
 - ⬅️➡️ Card navigation using arrow controls
+- 🚫 Navigation arrows automatically disabled on first and last cards
 - 💾 Save cards & questions in the database
 - 📱 Fully responsive UI using Tailwind CSS
 - 🗂️ Clean MVC architecture using Django
@@ -50,10 +51,9 @@ A dynamic Django web application that allows users to search cities, fetch real-
 
 ## 📸 Screenshots
 
-![alt text](<Screenshot 2026-01-07 105449.png>)
+<img width="1440" height="900" alt="Screenshot 2026-01-07 122244" src="https://github.com/user-attachments/assets/3f75d3c1-ce11-4cc7-8809-71eebdc2aa9e" />
 
-![alt text](<Screenshot 2026-01-07 105514.png>)
-
+<img width="1440" height="900" alt="Screenshot 2026-01-07 122336" src="https://github.com/user-attachments/assets/18644cdf-8197-4acd-9f44-b60ac651cd01" />
 
 ## 🧪 Future Enhancements
 
