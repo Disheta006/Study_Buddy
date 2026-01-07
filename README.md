@@ -1,6 +1,6 @@
 # 🌦️ Dynamic Weather & Quiz Card Application (Django)
 
-A dynamic Django web application that allows users to search cities, fetch real-time weather data, experience automatic theme changes based on weather conditions, and interact with quiz cards. Users can reveal answers, navigate cards,show study tip based on the weather and save them securely in the database.
+A dynamic Django web application that allows users to search cities, fetch real-time weather data, experience automatic theme changes based on weather conditions, and interact with quiz cards. Users can reveal answers, navigate cards, show study tip based on the weather and save them securely in the database.
 
 ## 🚀 Features
 
