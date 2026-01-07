@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Buddy</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="
+{% if theme == 'sunny' %}
+ bg-gradient-to-br from-yellow-300 via-orange-400 to-pink-500
+{% elif theme == 'rainy' %}
+ bg-gradient-to-br from-blue-600 via-indigo-700 to-slate-900
+{% elif theme == 'cloudy' %}
+ bg-gradient-to-br from-gray-400 via-gray-600 to-gray-800
+{% else %}
+ bg-gradient-to-br from-indigo-500 to-purple-700
+{% endif %}
+min-h-screen">
+    <div class="fixed top-0 w-full z-20 backdrop-blur-xl bg-white/80">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center text-gray-500">
+            <div>
+                <h1 class="text-lg font-semibold capitalize">
+                    {{ description }}
+                </h1>
+                <p>{{ temp }}°C</p>
+                <p class="italic">{{ study_tip }}</p>
+            </div>
+            <form method="get" class="flex gap-2">
+                <input type="text" name="city" placeholder="Search city"
+                       class="px-4 py-2 rounded-lg bg-white/20 backdrop-blur text-black placeholder-gray-400 outline-none">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <span class="text-sm font-medium uppercase">{{ theme }}</span>
+        </div>
+    </div>
+    <div class="min-h-screen flex items-center justify-between px-4">
+            <a href="?card={{index|add:-1}}" class="left-[-3rem] top-1/2 -translate-y-1/2 w-12 h-12 flex
+            items-center justify-center bg-white/80 backdrop-blur rounded-full shadow hover:bg-white transition">
+                <i class="fa-solid fa-arrow-left text-gray-700"></i>
+            </a>
+            <div class="w-full max-w-md bg-white/90 backdrop-blur-xl rounded-2xl p-6 shadow-xl text-center">
+                <h2 class="text-xl font-semibold mb-4">{{ card.question }}</h2>
+                <p id="answer" class="text-lg text-gray-700 hidden">{{ card.answer }}</p>
+                <button onclick="document.getElementById('answer').classList.toggle('hidden')" class="
+                {% if theme == 'sunny' %}
+                    bg-orange-500 hover:bg-orange-700
+                {% elif theme == 'rainy' %}
+                    bg-blue-600 hover:bg-blue-800
+                {% elif theme == 'cloudy' %}
+                    bg-gray-700 hover:bg-gray-800
+                {% else %}
+                    bg-purple-600 hover:bg-purple-700
+                {% endif %}
+                w-full mt-6 text-white py-3 rounded-xl font-semibold transition">
+                    Reveal Answer
+                </button>
+            </div>
+            <a href="?card={{index|add:1}}" class="right-[-3rem] top-1/2 -translate-y-1/2 w-12 h-12 flex
+            items-center justify-center bg-white/80 backdrop-blur rounded-full shadow hover:bg-white transition">
+                <i class="fa-solid fa-arrow-right text-gray-700"></i>
+            </a>
+    </div>
+</body>
+</html>
