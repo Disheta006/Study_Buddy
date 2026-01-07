@@ -84,8 +84,10 @@ A dynamic Django web application that allows users to search cities, fetch real-
 ## 👩‍💻 Author
 
 - **Name:** Isheta Dhanavada
--**GitHub:** https://github.com/Disheta006
--**LinkedIn:** Isheta Dhanavada
+  
+- **GitHub:** https://github.com/Disheta006
+
+- **LinkedIn:** Isheta Dhanavada
 
 ## ⭐ Acknowledgements
 
