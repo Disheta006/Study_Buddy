@@ -21,10 +21,6 @@ A dynamic Django web application that allows users to search cities, fetch real-
 - **API:** OpenWeather API
 - **Version Control:** Git & GitHub
 
-## 📂 Project Structure
-
-project/ │── weather_app/ │   ├── migrations/ │   ├── templates/ │   ├── static/ │   ├── views.py │   ├── models.py │   ├── urls.py │── project/ │   ├── settings.py │   ├── urls.py │── manage.py │── requirements.txt │── README.md
-
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
@@ -91,9 +87,9 @@ project/ │── weather_app/ │   ├── migrations/ │   ├── temp
 
 ## 👩‍💻 Author
 
-**Name:** Isheta Dhanavada
-📎 **GitHub:** https://github.com/Disheta006
-📎 **LinkedIn:** Isheta Dhanavada
+- **Name:** Isheta Dhanavada
+-📎**GitHub:** https://github.com/Disheta006
+-📎**LinkedIn:** Isheta Dhanavada
 
 ## ⭐ Acknowledgements
 
